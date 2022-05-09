@@ -27,7 +27,7 @@ def write_to_excel(data, file_path):
 
     ws = wb['Eddi params']
 
-    for col, header in enumerate(headers, start=2):
+    for col, header in enumerate(headers, start=1):
         ws.cell(row=1, column=col, value=header)
 
     for col, key in enumerate(keys, start=1):
